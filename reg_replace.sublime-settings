@@ -1,0 +1,60 @@
+{
+	"replacements": {
+		"fmg_doublenewline_space": {
+		"find": "\\n\\n",
+		"replace": " ",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_removenewlines": {
+		"find": "\\n",
+		"replace": " ",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_nultonewline": {
+		"find": "\\0",
+		"replace": "\\n",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_addquotes": {
+		"find": "((.*?\\d,){4})(.*)",
+		"replace": "\\1\"\\3\"",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_fixfirstline": {
+		"find": ",(Text* )(\\d)",
+		"replace": ",\\1\\n\\2",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_removeleadingspace": {
+		"find": "^ ",
+		"replace": "",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_cleanmistakes": {
+		"find": "(\\d,) ([a-z].*)",
+		"replace": "\\1\"\\2\"",
+		"greedy": true,
+		"case": false
+		},
+
+		"fmg_cleanmistakes2": {
+		"find": "\"\"\"",
+		"replace": "\"\"\"\"",
+		"greedy": true,
+		"case": false
+		}		
+
+	}
+}

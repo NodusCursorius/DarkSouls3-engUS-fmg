@@ -1,0 +1,7 @@
+[
+	{
+		"caption": "Reg Replace: Remove HTML Comments and Trailing Spaces",
+		"command": "reg_replace",
+		"args": {"replacements": ["fmg_doublenewline_space", "fmg_removenewlines", "fmg_nultonewline", "fmg_addquotes", "fmg_fixfirstline", "fmg_removeleadingspace", "remove_trailing_spaces", "fmg_cleanmistakes", "fmg_cleanmistakes2"]}
+	}
+]
